@@ -1,4 +1,4 @@
-# Ivan Ajala - Portfólio Profissional em Ciência / Analise de Dados
+# Portfólio Profissional em Ciência / Analise de Dados
 
 [![Portfólio Data Science](https://img.shields.io/badge/Portfólio-Data_Science-2E86C1)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio)
 [![GitHub](https://img.shields.io/badge/GitHub-Projetos_Completos-181717)](https://github.com/IvanAjala)
@@ -19,14 +19,16 @@
 
 ## 🚀 Projetos em Destaque
 
-### [📊 01 - Sistema de Prevenção de Churn com ML Interpretável](projects/01-churn-prediction/)
-**Problema de Negócio:** Reduzir a evasão de clientes através da identificação proativa de riscos  
-**Objetivo:** Desenvolver modelo preditivo com interpretabilidade para ações de retenção personalizadas  
-**Stack:** Python, XGBoost, SHAP, Streamlit, Azure ML, Power BI  
-**Impacto:** Redução estimada de **25% na taxa de churn** | ROI 3.5x  
-**Status:** ✅ **Completo** (Modelo + Dashboard + Deploy)  
+### [📊 01 - Sistema de Prevenção de Churn com ML Interpretável](projects/01-telco-customer-churn-prediction/README.md)
+
+* **Problema de Negócio:** Reduzir a evasão de clientes através da identificação proativa de riscos  
+* **Objetivo:** Desenvolver modelo preditivo com interpretabilidade para ações de retenção personalizadas  
+* **Stack:** Python, Random Forest Classifier, Logistic Regression, XGBoost, LightGBM, Gradient Boosting, SHAP, Streamlit
+* **Impacto:** Redução estimada de **25% na taxa de churn** | ROI 4x  
+* **Status:** ✅ **Completo** (Modelo + Dashboard + Deploy)  
 
 **Principais Entregas:**
+
 - Modelo Random Forest Calibrado com 84% ROC-AUC
 - Dashboard interativo com análise individual e em lote
 - Análise SHAP para explicabilidade do modelo
@@ -156,11 +158,11 @@ ivan-ajala-ds-portfolio/
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ivan_Alala-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/ivan-alala-ba759223)
 [![GitHub](https://img.shields.io/badge/GitHub-IvanAjala-181717?logo=github&logoColor=white)](https://github.com/IvanAjala)
-[![Email](https://img.shields.io/badge/Email-ivan_alala@hotmail.com-D14836?logo=gmail&logoColor=white)](mailto:ivan_alala@hotmail.com)
+[![Email](https://img.shields.io/badge/Email-ivan_alala@hotmail.com-D14836?logo=gmail&logoColor=white)](mailto:ivan_ajala@hotmail.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-11_99196_9451-25D366?logo=whatsapp&logoColor=white)](https://wa.me/5511991969451)
 
 **📍 Localização:** Osasco, São Paulo - Brasil  
-**🎯 Status Profissional:** Aberto a oportunidades como **Cientista de Dados | Analista de Dados Sênior**  
+**🎯 Status Profissional:** Aberto a oportunidades como **Cientista de Dados | Analista de Dados**  
 **💼 Modalidade:** Presencial, Híbrido ou Remoto
 
 ---
@@ -193,5 +195,5 @@ e histórias são apenas palavras até que alguém as transforme em ação."*
 
 ---
 
-**Última atualização:** Janeiro de 2024  
-**Repositório ativo:** Novos projetos sendo adicionados mensalmente
+**Última atualização:** Janeiro de 2026
+**Repositório ativo:** Novos projetos sendo adicionados com recorrência.
