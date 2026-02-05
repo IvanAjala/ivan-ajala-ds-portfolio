@@ -1,0 +1,64 @@
+SeniorCitizen
+tenure
+MonthlyCharges
+TotalCharges
+AvgChargesPerMonth
+ChargesDifference
+ChargesRatio
+EstimatedCLV
+HighValueCustomer
+IsNewCustomer
+IsVeteran
+TenureYears
+TotalServices
+HasManyServices
+NoAdditionalServices
+SecurityServicesCount
+NoSecurityServices
+StreamingServicesCount
+InternetWithoutServices
+IsMonthlyContract
+IsLongTermContract
+IsElectronicCheck
+IsAutomaticPayment
+HighRiskPaymentContract
+IsAlone
+HasFamily
+SeniorAlone
+DemographicRiskScore
+CompositeRiskScore
+CompositeRiskScore_Normalized
+TenureGroup_Encoded
+TenureQuartile_Encoded
+RiskLevel_Encoded
+gender_Male
+Partner_Yes
+Dependents_Yes
+PhoneService_Yes
+MultipleLines_No phone service
+MultipleLines_Yes
+InternetService_Fiber optic
+InternetService_No
+OnlineSecurity_No internet service
+OnlineSecurity_Yes
+OnlineBackup_No internet service
+OnlineBackup_Yes
+DeviceProtection_No internet service
+DeviceProtection_Yes
+TechSupport_No internet service
+TechSupport_Yes
+StreamingTV_No internet service
+StreamingTV_Yes
+StreamingMovies_No internet service
+StreamingMovies_Yes
+Contract_One year
+Contract_Two year
+PaperlessBilling_Yes
+PaymentMethod_Credit card (automatic)
+PaymentMethod_Electronic check
+PaymentMethod_Mailed check
+Tenure_Segment_Intermediário (13-24 meses)
+Tenure_Segment_Novo (0-12 meses)
+Tenure_Segment_Veterano (48+ meses)
+Charges_Segment_Baixo (≤R$35)
+Charges_Segment_Médio (R$35-70)

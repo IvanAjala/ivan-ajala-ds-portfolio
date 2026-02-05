@@ -1,0 +1,82 @@
+# ============ DADOS E MODELOS ============
+# Arquivos de dados grandes
+*.csv
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.model
+*.xlsx
+*.xls
+
+# Pastas de dados
+data/raw/
+data/processed/
+!data/sample/           # Mantém pasta sample (pode conter exemplos)
+!data/README.md         # Mantém documentação
+
+# Modelos treinados grandes
+models/*.pkl
+models/*.pickle
+models/*.joblib
+!models/README.md
+!models/model_architecture.json   # Mantém arquivos de configuração pequenos
+
+# ============ CREDENCIAIS E SECRETS ============
+.env
+.env.*
+secrets/
+credentials/
+config.yaml
+config.yml
+*.key
+*.pem
+*.cert
+
+# ============ AMBIENTES VIRTUAIS ============
+.venv
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ============ LOGS E TEMPORÁRIOS ============
+logs/
+*.log
+*.tmp
+*.temp
+*.cache
+
+# ============ IDE E EDITORES ============
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============ PYTHON ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# ============ JUPYTER ============
+.ipynb_checkpoints/
+
+# ============ SISTEMA OPERACIONAL ============
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ============ NOTEBOOK OUTPUTS ============
+# Remove outputs de células para versionamento limpo
+notebooks/*.nbconvert.*

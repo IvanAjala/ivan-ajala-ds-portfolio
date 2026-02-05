@@ -1,0 +1,62 @@
+{
+    "model_name": "Random Forest Otimizado",
+    "model_type": "RandomForestClassifier",
+    "timestamp": "2026-02-04 20:06:53",
+    "test_metrics": {
+        "roc_auc": 0.8440543542845333,
+        "accuracy": 0.7721788502484032,
+        "precision": 0.5520628683693517,
+        "recall": 0.7513368983957219,
+        "f1_score": 0.636466591166478
+    },
+    "train_metrics": {
+        "roc_auc": 0.9243574256137678,
+        "accuracy": 0.834043308484203,
+        "precision": 0.6388888888888888,
+        "recall": 0.8615384615384616,
+        "f1_score": 0.7336941042438052
+    },
+    "cross_validation": {
+        "cv_folds": 5,
+        "cv_roc_auc_mean": 0.843086112298459,
+        "cv_roc_auc_std": 0.012975515762566671,
+        "cv_accuracy_mean": 0.7790151630966697,
+        "cv_precision_mean": 0.5649364918924717,
+        "cv_recall_mean": 0.7351170568561873,
+        "cv_f1_mean": 0.6386982265185641
+    },
+    "best_params": {
+        "bootstrap": true,
+        "class_weight": "balanced_subsample",
+        "max_depth": 10,
+        "max_features": "log2",
+        "min_samples_leaf": 4,
+        "min_samples_split": 10,
+        "n_estimators": 200
+    },
+    "dataset_info": {
+        "total_features": 64,
+        "train_samples": 5634,
+        "test_samples": 1409,
+        "train_churn_rate": 0.2653532126375577,
+        "test_churn_rate": 0.2654364797728886
+    },
+    "error_analysis": {
+        "false_negatives": 93,
+        "false_positives": 228,
+        "true_positives": 281,
+        "true_negatives": 807,
+        "false_negative_rate": 0.0660042583392477,
+        "false_positive_rate": 0.16181689141234917
+    },
+    "calibration": {
+        "mean_calibration_error": 0.12958533695952337,
+        "max_calibration_error": 0.2712183070377182
+    },
+    "recommended_threshold": {
+        "optimal_f1": 0.4600000000000001,
+        "default": 0.5,
+        "conservative": 0.6,
+        "aggressive": 0.4
+    }
+}
