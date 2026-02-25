@@ -1,4 +1,4 @@
-# Portfólio Profissional em Ciência / Analise de Dados
+# Portifólio Profissional em Ciência / Analise de Dados
 
 [![Portfólio Data Science](https://img.shields.io/badge/Portfólio-Data_Science-2E86C1)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio)
 [![GitHub](https://img.shields.io/badge/GitHub-Projetos_Completos-181717)](https://github.com/IvanAjala)
