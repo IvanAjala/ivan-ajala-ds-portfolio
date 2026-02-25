@@ -29,10 +29,12 @@
 
 **Principais Entregas:**
 
-- Modelo Random Forest Calibrado com 84% ROC-AUC
+- Modelo Regressão Logística Calibrada (CV) com 84% ROC-AUC
 - Dashboard interativo com análise individual e em lote
 - Análise SHAP para explicabilidade do modelo
 - Insights acionáveis para times de Marketing e Customer Success
+
+---
 
 ### [🌍 02 - Análise de Sustentabilidade & ESG com Dados Públicos](projects/02-esg-analysis/)
 **Problema de Negócio:** Avaliar desempenho ESG e correlacionar com indicadores econômicos  
@@ -46,6 +48,8 @@
 - Análise espacial com mapas interativos
 - Dashboard executivo com storytelling de dados
 - Correlações entre métricas ESG e performance econômica
+
+---
 
 ### [🛒 03 - Sistema de Recomendação para E-commerce](projects/03-recommendation-system/)
 **Problema de Negócio:** Aumentar conversão e ticket médio através de personalização  
