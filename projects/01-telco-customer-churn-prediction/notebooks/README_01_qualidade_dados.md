@@ -6,7 +6,7 @@
 
 **Sistema Inteligente de Retenção de Clientes - Telecomunicações**
 
-[📓 Notebook](01_qualidade_dados.ipynb) • [📊 Dataset](../data/raw/) • [📚 Docs](../docs/)
+[📓 Notebook](/projects/01-telco-customer-churn-prediction/notebooks/01_qualidade_dados.ipynb) • [📊 Dataset](/projects/01-telco-customer-churn-prediction/data/raw/) • [📚 Docs](/projects/01-telco-customer-churn-prediction/docs/)
 
 ---
 ## 📋 Visão Geral
@@ -176,16 +176,25 @@ Kernel → Restart & Run All
 | **Desenvolvimento** | Alterar parâmetros de preenchimento (ex.: valor de `TotalCharges`) e testar em um *subset* antes de rodar no dataset completo.                                       |
 | **Produção**        | Converta o notebook em script (`nbconvert`) e automatize a execução via CI/CD; persista o `scaler.pkl` (se aplicável) e o `transformations_log.json` para auditoria. |
 
----
-## 📝 Notas de Versão
+
+## 📌 Notas Finais
+
+> **Importante:** Este notebook deve ser executado **antes** de qualquer análise exploratória ou modelagem. Ele garante que o dataset esteja livre de inconsistências que possam enviesar os resultados.
+
+> **Próximo passo:** Execute `02_analise_exploratoria.ipynb` para descobrir padrões, correlações e insights que alimentarão a fase de **Feature Engineering**.
+
+> **Para Portfólio:** Este README demonstra um fluxo completo de **Data Quality Assurance**, essencial para projetos de ciência de dados corporativos.
+
+
+## 🔄 Notas de Versão
 
 | Versão     | Data       | Alterações                                                                                       |
 | ---------- | ---------- | ------------------------------------------------------------------------------------------------ |
 | **v1.0.0** | 07/12/2025 | Pipeline de qualidade completo – 92 células, 5 visualizações, exportação de dataset limpo.       |
 | **v1.1.0** | 15/01/2026 | Adição de *logging* detalhado, melhoria nos checkpoints e inclusão de visualizações de outliers. |
 | **v2.0.0** | 08/02/2026 | Revisão textual e ajustes necessários na escrita para melhor entendimento.                             |
+| **v2.1.0** | 25/02/2026 | Atualização e revisão final (código e documentação).              |
 
----
 ## 👤 Autor
 
 **Nome:** Ivan Ajala  
@@ -196,28 +205,19 @@ Kernel → Restart & Run All
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ivan%20Ajala-0A66C2?logo=linkedin)](https://www.linkedin.com/in/ivan-ajala)  
 [![Email](https://img.shields.io/badge/Email-ivan.ajala%40gmail.com-red)](mailto:ivan.ajala@gmail.com)
 
----
-## 📌 Notas Finais
-
-> **Importante:** Este notebook deve ser executado **antes** de qualquer análise exploratória ou modelagem. Ele garante que o dataset esteja livre de inconsistências que possam enviesar os resultados.
-
-> **Próximo passo:** Rode `02_analise_exploratoria.ipynb` para descobrir padrões, correlações e insights que alimentarão a fase de **Feature Engineering**.
-
-> **Para Portfólio:** Este README demonstra um fluxo completo de **Data Quality Assurance**, essencial para projetos de ciência de dados corporativos.
-
----
-
-![Estrelas](https://img.shields.io/github/stars/IvanAjala/telco-churn-prediction?style=social)
-![Forks](https://img.shields.io/github/forks/IvanAjala/telco-churn-prediction?style=social)
-![Licença](https://img.shields.io/badge/Licença-MIT-green)
-
 **⭐ Se este projeto foi útil, considere dar uma estrela no GitHub!**
+
+  [![Estrelas](https://img.shields.io/github/stars/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/stargazers)
+  [![Forks](https://img.shields.io/github/forks/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/network/members)
+  [![Licença](https://img.shields.io/badge/Licença-MIT-green)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/blob/main/projects/01-telco-customer-churn-prediction/LICENSE)
+  [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+  [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
 
 ---
 
 ### 🔗 Navegação Rápida
 
-**⬅️ [Anterior](README.md)** | **[🔝 Voltar ao topo](#-visão-geral)** | **➡️ [Próximo](README_02_analise_exploratoria)**
+**⬅️ [Anterior](/README.md)** | **[🔝 Voltar ao topo](#-visão-geral)** | **➡️ [Próximo](README_02_analise_exploratoria.md)**
 
 ---
 

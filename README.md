@@ -20,7 +20,7 @@
 
 ## 🚀 Projetos em Destaque
 
-### [📊 01 - Sistema de Prevenção de Churn com ML Interpretável](../ivan-ajala-ds-portfolio/projects/01-telco-customer-churn-prediction/README.md)
+### [📊 01 - Sistema de Prevenção de Churn com ML Interpretável](./projects/01-telco-customer-churn-prediction/README.md)
 
 * **Problema de Negócio:** Reduzir a evasão de clientes através da identificação proativa de riscos  
 * **Objetivo:** Desenvolver modelo preditivo com interpretabilidade para ações de retenção personalizadas  

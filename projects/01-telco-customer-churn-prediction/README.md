@@ -1,4 +1,4 @@
-<img src="/src/banners/readme_banner.png" width="985" height="180">
+<img src="../01-telco-customer-churn-prediction/src/banners/notebooks_banner.png" width="985" height="180">
 
 # 🚀 Projeto de Predição de Churn em Telecomunicações
 
@@ -27,7 +27,7 @@ A operadora de telecomunicações enfrenta uma **taxa de churn de 26.5%**, resul
 
 - **Redução projetada de 30% na taxa de churn** para clientes de alto risco
 - **ROI de 584%** nas ações de retenção propostas
-- **Preservação de R$ 247.6M em receita** que seria perdida devido ao churn
+- **Preservação de $ 247.6M em receita** que seria perdida devido ao churn
 - **Identificação dos principais fatores de risco**: Fibra Ótica (5.72x), Contrato Mensal (3.5x), Cliente Recente <12 meses (3x)
 - **Payback period de apenas 2.3 meses** para o investimento em retenção
 
@@ -47,19 +47,18 @@ Este insight psicológico transformou nossa abordagem de retenção, priorizando
 
 O projeto está organizado em notebooks sequenciais que abordam cada etapa do pipeline de ciência de dados:
 
-1. [**Qualidade dos Dados**](../notebooks/README_01_qualidade_dados.md) - Preparação e limpeza do dataset
-2. [**Análise Exploratória**](https://app.innerai.com/notebooks/README_02_analise_exploratoria.md) - Investigação de padrões e correlações
-3. [**Engenharia de Features**](https://app.innerai.com/notebooks/README_03_engenharia_feature.md) - Criação de variáveis relevantes
-4. [**Modelagem Preditiva**](https://app.innerai.com/notebooks/README_04_modelagem_preditiva.md) - Desenvolvimento e avaliação de modelos
-5. [**Insights de Negócio**](https://app.innerai.com/notebooks/README_05_business_insights.md) - Tradução dos resultados em ações
-6. [**Dashboard Executivo**](https://app.innerai.com/dashboard/README_Dashboard.md) - Interface interativa para visualização e tomada de decisão
+1. [**Qualidade dos Dados**](/projects/01-telco-customer-churn-prediction/notebooks/01_qualidade_dados.ipynb) - Preparação e limpeza do dataset
+2. [**Análise Exploratória**](/projects/01-telco-customer-churn-prediction/notebooks/02_analise_exploratoria.ipynb) - Investigação de padrões e correlações
+3. [**Engenharia de Features**](/projects/01-telco-customer-churn-prediction/notebooks/03_engenharia_feature.ipynb) - Criação de variáveis relevantes
+4. [**Modelagem Preditiva**](/projects/01-telco-customer-churn-prediction/notebooks/04_modelagem_preditiva.ipynb) - Desenvolvimento e avaliação de modelos
+5. [**Insights de Negócio**](/projects/01-telco-customer-churn-prediction/notebooks/05_business_insights.ipynb) - Tradução dos resultados em ações
+6. [**Dashboard Executivo**](/projects/01-telco-customer-churn-prediction/dashboard/README.md) - Interface interativa para visualização e tomada de decisão
 
 ## 📊 Dashboard Interativo
 
-![[06_img_dashboard-visao-geral 1.png]]
-![Preview do Dashboard](../src/notebooks/06_img_dashboard-visao-geral.png)
+![Preview do Dashboard](/projects/01-telco-customer-churn-prediction/src/dashboard/06_img_dashboard-visao-geral.png)
 
-O [**Dashboard Executivo**](https://app.innerai.com/dashboard/README_Dashboard.md) oferece uma interface intuitiva para:
+O [**Dashboard Executivo**](/projects/01-telco-customer-churn-prediction/dashboard/README.md) oferece uma interface intuitiva para:
 
 - Monitorar KPIs de churn em tempo real
 - Visualizar a segmentação de clientes por risco
@@ -116,34 +115,42 @@ cd dashboard streamlit run app.py
 A implementação do Sistema Inteligente de Retenção de Clientes tem potencial para:
 
 - **Reduzir a taxa de churn em 7.9 pontos percentuais** (de 26.5% para 18.6%)
-- **Preservar R$ 247.6M em receita anual**
+- **Preservar $ 247.6M em receita anual**
 - **Aumentar o Customer Lifetime Value (CLV) médio em 32%**
 - **Melhorar a eficiência das campanhas de retenção em 3.4x**
 
-## 👥 Equipe e Contato
+---
 
-**Desenvolvedor:** Ivan Ajala  
-**E-mail:** ivan.ajala@example.com  
-**LinkedIn:** [linkedin.com/in/ivanajala](https://linkedin.com/in/ivanajala)  
-**GitHub:** [github.com/ivanajala](https://github.com/ivanajala)
+## 📌 Notas Finais
 
-## 📝 Licença
+> **Importante:** Este notebook deve ser executado **antes** de qualquer análise exploratória ou modelagem. Ele garante que o dataset esteja livre de inconsistências que possam enviesar os resultados.
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
+> **Próximo passo:** Rode `02_analise_exploratoria.ipynb` para descobrir padrões, correlações e insights que alimentarão a fase de **Feature Engineering**.
+
+> **Para Portfólio:** Este README demonstra um fluxo completo de **Data Quality Assurance**, essencial para projetos de ciência de dados corporativos.
 
 ---
 
-![Estrelas](https://img.shields.io/github/stars/IvanAjala/telco-churn-prediction?style=social)
-![Forks](https://img.shields.io/github/forks/IvanAjala/telco-churn-prediction?style=social)
-![Licença](https://img.shields.io/badge/Licença-MIT-green)
+## 👤 Autor
+
+**Nome:** Ivan Ajala  
+**Função:** Data Scientist  
+**Projeto:** Telco Customer Churn Prediction  
+
+[![GitHub](https://img.shields.io/badge/GitHub-Ivan%20Ajala-181717?logo=github)](https://github.com/IvanAjala)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ivan%20Ajala-0A66C2?logo=linkedin)](https://www.linkedin.com/in/ivan-ajala)  
+[![Email](https://img.shields.io/badge/Email-ivan.ajala%40gmail.com-red)](mailto:ivan.ajala@gmail.com)
 
 **⭐ Se este projeto foi útil, considere dar uma estrela no GitHub!**
 
+  [![Estrelas](https://img.shields.io/github/stars/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/stargazers)
+  [![Forks](https://img.shields.io/github/forks/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/network/members)
+  [![Licença](https://img.shields.io/badge/Licença-MIT-green)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/blob/main/projects/01-telco-customer-churn-prediction/LICENSE)
+  [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+  [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+
+### 🔗 Navegação Rápida
+
+**⬅️ [Anterior](/README.md)** | **[🔝 Voltar ao topo](#-visão-geral)** | **➡️ [Próximo](/projects/01-telco-customer-churn-prediction/notebooks/README_01_qualidade_dados.md)**
+
 ---
-## 🔗 Navegação Rápida
-
-**⬅️ [Anterior](README_01.md)** | **📋 [Índice](README.md)** | **➡️ [Próximo](README)**
-
----
-
-_Desenvolvido como parte do portfólio de Data Science de Ivan Ajala, 2025_

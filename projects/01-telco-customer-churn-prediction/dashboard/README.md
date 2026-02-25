@@ -1,4 +1,4 @@
-# Sistema Inteligente de Retenção de Clientes - Dashboard Executivo
+# Dashboard Executivo - Sistema Inteligente de Retenção de Clientes
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-1.30.0-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-5.18.0-3F4F75?style=for-the-badge&logo=plotly&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-2.0+-150458?style=for-the-badge&logo=pandas&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3+-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Status](https://img.shields.io/badge/Status-%E2%9C%85%20Conclu%C3%ADdo-success?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
@@ -224,7 +224,6 @@ Esta ferramenta é valiosa para entender os drivers de churn e testar estratégi
 
 	O aplicativo será aberto automaticamente no seu navegador padrão (geralmente em `http://localhost:8501`)
 
----
 ## 👥 Contribuições
 
 Contribuições são bem-vindas! 
@@ -237,6 +236,16 @@ Para contribuir:
 4. Push para a branch (`git push origin feature/nova-funcionalidade`)
 5. Abra um Pull Request
 
+---
+
+## 🔄 Histórico de Versões
+
+| Versão | Data       | Descrição                                                |
+| ------ | ---------- | -------------------------------------------------------- |
+| 1.0    | 19/02/2026 | Elaboração do README      |
+| 2.0    | 25/02/2026 | Atualização e revisão final (código e documentação)      |
+
+
 ## 👤 **Autor**
 
 **Nome:** Ivan Ajala  
@@ -247,27 +256,16 @@ Para contribuir:
 ![LinkedIn](https://img.shields.io/badge/LinkedIn-ivan_ajala-0A66C2?logo=linkedin)
 ![Email](https://img.shields.io/badge/Email-ivan_ajala@hotmail.com-red)
 
----
-## 📄 Licença
-
-Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](../LICENSE) para detalhes.
-
----
-## 🔄 Histórico de Versões
-
-| Versão | Data       | Descrição                                                |
-| ------ | ---------- | -------------------------------------------------------- |
-| 1.0    | 25/02/2026 | Atualização e revisão final (código e documentação)      |
-
----
-
-![Estrelas](https://img.shields.io/github/stars/seu-usuario/telco-churn-prediction?style=social)
-![Forks](https://img.shields.io/github/forks/seu-usuario/telco-churn-prediction?style=social)
-![Licença](https://img.shields.io/badge/Licença-MIT-green)
-
 **⭐ Se este projeto foi útil, considere dar uma estrela no GitHub!**
 
+  [![Estrelas](https://img.shields.io/github/stars/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/stargazers)
+  [![Forks](https://img.shields.io/github/forks/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/network/members)
+  [![Licença](https://img.shields.io/badge/Licença-MIT-green)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/blob/main/projects/01-telco-customer-churn-prediction/LICENSE)
+  [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+  [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+
 ---
+
 ### 🔗 Navegação Rápida
 
 **⬅️ [Anterior](../notebooks/05_business_insights.ipynb)** | **[🔝 Voltar ao topo](#-visão-geral)**  | **➡️ [Próximo](../README.md)**

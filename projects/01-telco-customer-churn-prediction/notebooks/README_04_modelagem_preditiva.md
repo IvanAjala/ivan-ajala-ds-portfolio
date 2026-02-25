@@ -4,7 +4,7 @@
 
 **Sistema Inteligente de Retenção de Clientes - Telecomunicações** 
 
-[📓 Notebook](04_modelagem_preditiva.ipynb) • [📊 Dataset](../data/processed/) • [📚 Docs](../docs/) 
+[📓 Notebook](./04_modelagem_preditiva.ipynb) • [📊 Dataset](../data/processed/) • [📚 Docs](../docs/) 
 
 --- 
 ## 📋 Visão Geral 
@@ -178,7 +178,7 @@ Brier Score: 0.1684
 ```
 #### 📊 Visualização Gerada (Matriz de Confusão - Regressão Logistica)
 
-<img src="../src/notebooks/05_img_confusion_matrix_lr.png" width="400">
+<img src="../src/notebooks/05_img_confusion_matrix_lr.png" width="450">
 
 **💡 Insight Principal:**
 
@@ -345,6 +345,14 @@ A interpretabilidade da Regressão Logística permite entender o impacto de cada
 1.  **`05_business_insights.ipynb`:** Focar na tradução dos insights da Regressão Logística em recomendações de negócio acionáveis, estratégias de retenção e projeções de ROI mais detalhadas.
 2.  **Integração e Monitoramento:** Planejar a integração do modelo em um pipeline de produção e o monitoramento contínuo de sua performance e impacto no negócio.
 
+## 🔄 Histórico de Versões
+
+| Versão | Data       | Descrição                                                        |
+| ------ | ---------- | ---------------------------------------------------------------- |
+| 1.0    | 06/02/2026 | Modelagem preditiva completa, calibração e análise de trade-offs |
+| 1.1    | 19/02/2026 | Documentação e persistência de artefatos                         |
+| 2.0    | 25/02/2026 | Atualização e revisão final (código e documentação)              |
+
 ## 👤 **Autor**
 
 **Nome:** Ivan Ajala  
@@ -355,29 +363,13 @@ A interpretabilidade da Regressão Logística permite entender o impacto de cada
 ![LinkedIn](https://img.shields.io/badge/LinkedIn-ivan_ajala-0A66C2?logo=linkedin)
 ![Email](https://img.shields.io/badge/Email-ivan_ajala@hotmail.com-red)
 
----
-## 📄 Licença
-
-Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](../LICENSE) para detalhes. 
-
----
-## 🔄 Histórico de Versões
-
-| Versão | Data       | Descrição                                                        |
-| ------ | ---------- | ---------------------------------------------------------------- |
-| 1.0    | 06/02/2026 | Modelagem preditiva completa, calibração e análise de trade-offs |
-| 1.1    | 19/02/2026 | Documentação e persistência de artefatos                         |
-| 2.0    | 25/02/2026 | Atualização e revisão final (código e documentação)              |
-
----
-
-![Estrelas](https://img.shields.io/github/stars/seu-usuario/telco-churn-prediction?style=social)
-![Forks](https://img.shields.io/github/forks/seu-usuario/telco-churn-prediction?style=social)
-![Licença](https://img.shields.io/badge/Licença-MIT-green)
-
 **⭐ Se este projeto foi útil, considere dar uma estrela no GitHub!**
 
----
+  [![Estrelas](https://img.shields.io/github/stars/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/stargazers)
+  [![Forks](https://img.shields.io/github/forks/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/network/members)
+  [![Licença](https://img.shields.io/badge/Licença-MIT-green)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/blob/main/projects/01-telco-customer-churn-prediction/LICENSE)
+  [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+  [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
 
 ### 🔗 Navegação Rápida
 

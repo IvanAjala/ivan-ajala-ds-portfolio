@@ -4,7 +4,7 @@
 
 **Sistema Inteligente de Retenção de Clientes - Telecomunicações**
 
-[📓 Notebook](03_engenharia_feature.ipynb) • [📊 Dataset](../data/processed/) • [📚 Docs](../docs/)
+[📓 Notebook](./03_engenharia_feature.ipynb) • [📊 Dataset](../data/processed/) • [📚 Docs](../docs/)
 
 ---
 
@@ -81,37 +81,37 @@ import SMOTE
 
 ```
 📓 03_engenharia_feature.ipynb │ 
-├── 1️⃣ Configuração Inicial (4%) │ 
-	├── Importação de bibliotecas │ 
-	└── Configuração do ambiente │ 
-├── 2️⃣ Carregamento de Dados (8%) │ 
-		├── Leitura do dataset limpo │ 
-		└── Inspeção inicial │ 
-├── 3️⃣ Análise Inicial (5%) │ 
-	├── Tipos de dados │ 
-	└── Separação features/target │ 
-├── 4️⃣ Criação de Features (40%) │ 
-	├── 4.1 Features Financeiras (5) │ 
-	├── 4.2 Features de Tenure (5) │ 
-	├── 4.3 Features de Serviços (7) │ 
-	├── 4.4 Features de Contrato (5) │ 
-	├── 4.5 Features Demográficas (4) │ 
-	└── 4.6 Features de Risco Composto (3) │ 
-├── 5️⃣ Encoding de Variáveis (10%) │ 
-	├── Label Encoding (ordinais) │ 
-	└── One-Hot Encoding (nominais) │ 
-├── 6️⃣ Preparação Final (8%) │ 
-	├── Remoção de colunas │ 
-	├── Separação X/y │ 
-	└── Train/Test Split │ 
-├── 7️⃣ Normalização (5%) │ 
-	└── StandardScaler │ 
-├── 8️⃣ Balanceamento (5%) │ 
-	└── SMOTE │ 
-├── 9️⃣ Feature Selection (10%) │ 
-	└── Mutual Information │ 
-└── 🔟 Exportação (5%) 
-	└── 8 arquivos gerados
+    ├── 1️⃣ Configuração Inicial (4%) │ 
+        ├── Importação de bibliotecas │ 
+        └── Configuração do ambiente │ 
+    ├── 2️⃣ Carregamento de Dados (8%) │ 
+            ├── Leitura do dataset limpo │ 
+            └── Inspeção inicial │ 
+    ├── 3️⃣ Análise Inicial (5%) │ 
+        ├── Tipos de dados │ 
+        └── Separação features/target │ 
+    ├── 4️⃣ Criação de Features (40%) │ 
+        ├── 4.1 Features Financeiras (5) │ 
+        ├── 4.2 Features de Tenure (5) │ 
+        ├── 4.3 Features de Serviços (7) │ 
+        ├── 4.4 Features de Contrato (5) │ 
+        ├── 4.5 Features Demográficas (4) │ 
+        └── 4.6 Features de Risco Composto (3) │ 
+    ├── 5️⃣ Encoding de Variáveis (10%) │ 
+        ├── Label Encoding (ordinais) │ 
+        └── One-Hot Encoding (nominais) │ 
+    ├── 6️⃣ Preparação Final (8%) │ 
+        ├── Remoção de colunas │ 
+        ├── Separação X/y │ 
+        └── Train/Test Split │ 
+    ├── 7️⃣ Normalização (5%) │ 
+        └── StandardScaler │ 
+    ├── 8️⃣ Balanceamento (5%) │ 
+        └── SMOTE │ 
+    ├── 9️⃣ Feature Selection (10%) │ 
+        └── Mutual Information │ 
+    └── 🔟 Exportação (5%) 
+        └── 8 arquivos gerados
 ```
 
 ---
@@ -162,7 +162,7 @@ df['HighValueCustomer'] = (
     df['MonthlyCharges'] > df['MonthlyCharges'].quantile(0.75)
 ).astype(int)
 ```
-#### 📈 Output Esperado
+#### 📈 Output
 
 ```
 ✅ Features financeiras criadas: 
@@ -205,9 +205,10 @@ plt.tight_layout()
 plt.show()
 ```
 
-**📸 Visualização Esperada:**
+**📸 Visualização (Distribuição das Features Financeiras):**
 
-![Distribuição das Features Financeiras](../src/notebooks/03_img01.png)
+<img src="../src/notebooks/03_img01.png" width="750">
+
 
 **💡 Insight Principal:**
 - Features financeiras capturam **padrões de valor** do cliente
@@ -267,11 +268,9 @@ df['TenureQuartile'] = pd.qcut(df['tenure'], q=4,
 	• Established: 1,789 (25.4%) 
 	• Veteran: 1,566 (22.3%)
 ```
-#### 📸 Visualização Esperada:
+#### 📸 Visualização (Distribuição de Grupos de Tenure + Novos vs Veteranos):
 
-**Gráfico:** Distribuição de Grupos de Tenure + Novos vs Veteranos
-
-![Distribuição de Grupos de Tenure ](../src/notebooks/03_img02.png)
+<img src="../src/notebooks/03_img02.png" width="900">
 
 **💡 Insight Principal:**
 - **Primeiros 12 meses** são críticos (maior churn)
@@ -351,12 +350,10 @@ df['InternetWithoutServices'] = (
 
 - Clientes SEM serviços de segurança têm 3.2x MAIS CHANCE de churn!
 
-#### 📸 Visualização Esperada:
+#### 📸 Visualização (nálise de Serviços (2x2 grid)):
 
-**Gráfico:** Análise de Serviços (2x2 grid)
-
-![Taxa de Churn por Cohort](../src/notebooks/03_img03.png)
-![Taxa de Churn por Cohort](../src/notebooks/03_img04.png)
+<img src="../src/notebooks/03_img03.png" width="900">
+<img src="../src/notebooks/03_img04.png" width="900">
 
 **💡 Insight Principal:**
 - **49.7%** dos clientes não têm serviços de segurança
@@ -579,13 +576,10 @@ df['DemographicRiskScore'] = (
 		- 2 (alto): 1,987 (28.2%) 
 		- 3 (crítico): 1,244 (17.7%)
 ```
-#### 📊 Visualização Esperada
+#### 📊 Visualização (Features demográficas combinadas)
 
-**Gráfico:** Features demográficas combinadas
+<img src="../src/notebooks/03_img05.png" width="900">
 
-![03_img05.png](../src/notebooks/03_img05.png)
-
----
 
 #### 📊 Análise de Churn por Perfil Demográfico
 
@@ -689,7 +683,7 @@ print(f"   • Score 3 vs Score 0: {df[df['DemographicRiskScore']==3]['Churn'].v
 
 #### 📊 Visualização do GRADIENTE DE RISCO - Score Demográfico
 
-![Visualização - Score Demográfico](../src/notebooks/03_img06.png)
+<img src="../src/notebooks/03_img06.png" width="900">
 
 ---
 
@@ -847,13 +841,11 @@ df['RiskLevel'] = df['CompositeRiskScore_Normalized'].apply(categorize_risk)
 - **Lucro líquido: $ 150K**.
 - **ROI: 300%**.
 
-### 📊 Visualizando as Features de risco composto
+### 📊 Visualizando (Features de risco composto)
 
-![03_img07](../src/notebooks/03_img07.png)
+<img src="../src/notebooks/03_img07.png" width="900">
+<img src="../src/notebooks/03_img08.png" width="900">
 
-![03_img08](../src/notebooks/03_img08.png)
-
-----
 
 ## 📊 Resumo das Features Criadas
 
@@ -1156,11 +1148,9 @@ Novos shapes:
   • X_test_selected: (1409, 50)
 ```
 
-#### 📊 Visualização Gerada
+#### 📊 Visualização (Top 20 Features)
 
-![03_img09](../src/notebooks/03_img09.png)
-
----
+<img src="../src/notebooks/03_img09.png" width="900">
 
 #### 📈 Output Esperado
 
@@ -1431,8 +1421,8 @@ Metadados salvos
   • ChargesDifference
   ```
 
-![03_img10](../src/notebooks/03_img10.png)
-![03_img11](../src/notebooks/03_img11.png)
+<img src="../src/notebooks/03_img10.png" width="900">
+<img src="../src/notebooks/03_img11.png" width="900">
 
 
 ## 💡 Conclusão
@@ -1487,6 +1477,17 @@ jupyter notebook 03_engenharia_feature.ipynb
 - ✅ Curvas de aprendizado
 
 ---
+
+## 🔄 Notas de Versão
+
+| Versão | Data       | Descrição                                                           |
+| ------ | ---------- | ------------------------------------------------------------------- |
+| 1.0    | 09/02/2026 | Engeharia das features completa implementada                        |
+| 1.1    | 11/02/2026 | Documentação Exportação                                             |
+| 1.2    | 12/02/2026 | Atualização no trecho do código em:11.2. Dados balanceados (SMOTE)  |
+| 2.0    | 25/02/2026 | Atualização e revisão final do conteúdo                             |
+
+
 ## 👤 **Autor**
 **Nome:** Ivan Ajala  
 **Função:** Data Scientist  
@@ -1496,33 +1497,16 @@ jupyter notebook 03_engenharia_feature.ipynb
 ![LinkedIn](https://img.shields.io/badge/LinkedIn-ivan_ajala-0A66C2?logo=linkedin)
 ![Email](https://img.shields.io/badge/Email-ivan_ajala@hotmail.com-red)
 
----
-## 📄 Licença
-
-Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](../LICENSE) para detalhes.
-
----
-## 🔄 Histórico de Versões
-
-| Versão | Data       | Descrição                                                           |
-| ------ | ---------- | ------------------------------------------------------------------- |
-| 1.0    | 09/02/2026 | Engeharia das features completa implementada                        |
-| 1.1    | 11/02/2026 | Documentação Exportação                                             |
-| 1.2    | 12/02/2026 | Atualização no trecho do código em:11.2. Dados balanceados (SMOTE)  |
-| 2.0    | 25/02/2026 | Atualização e revisão final do conteúdo                             |
-
----
-
-![Estrelas](https://img.shields.io/github/stars/seu-usuario/telco-churn-prediction?style=social)
-![Forks](https://img.shields.io/github/forks/seu-usuario/telco-churn-prediction?style=social)
-![Licença](https://img.shields.io/badge/Licença-MIT-green)
-
 **⭐ Se este projeto foi útil, considere dar uma estrela no GitHub!**
 
----
+  [![Estrelas](https://img.shields.io/github/stars/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/stargazers)
+  [![Forks](https://img.shields.io/github/forks/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/network/members)
+  [![Licença](https://img.shields.io/badge/Licença-MIT-green)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/blob/main/projects/01-telco-customer-churn-prediction/LICENSE)
+  [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+  [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+
 ### 🔗 Navegação Rápida
 
-**⬅️ [Anterior](README_02_analise_exploratoria.md)** | **[🔝 Voltar ao topo](#-visão-geral)** | **➡️ [Próximo](README_04_modelagem_preditiva.md)**
+**⬅️ [Anterior](./README_02_analise_exploratoria.md)** | **[🔝 Voltar ao topo](#-visão-geral)** | **➡️ [Próximo](./README_04_modelagem_preditiva.md)**
 
-
-
+---

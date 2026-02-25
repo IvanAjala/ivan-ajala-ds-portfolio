@@ -5,7 +5,7 @@
 
 **Sistema Inteligente de Retenção de Clientes - Telecomunicações**
 
-[📓 Notebook](02_analise_exploratoria.ipynb) • [📊 Dataset](../data/processed/) • [📚 Docs](../docs/)
+[📓 Notebook](/projects/01-telco-customer-churn-prediction/notebooks/02_analise_exploratoria.ipynb) • [📊 Dataset](/projects/01-telco-customer-churn-prediction/data/processed/) • [📚 Docs](/projects/01-telco-customer-churn-prediction/docs/)
 
 ---
 ## 📋 Visão Geral
@@ -143,22 +143,22 @@ jupyter notebook 02_analise_exploratoria.ipynb
 ```Kernel → Restart & Run All```
 
 ---
-## 📦 Estrutura de Pastas Esperada
+## 📦 Estrutura de Pastas
 
 ```
 telco-churn-prediction/ 
-├── data/ │ 
-├── raw/ │ │ 
-	└── WA_Fn-UseC_-Telco-Customer-Churn.csv │ 
-└── processed/
-	│ └── churn_data_clean_v1.csv ← Entrada deste notebook 
-├── notebooks/ │ 
-	├── 01_qualidade_dados.ipynb │ 
-	├── 02_analise_exploratoria.ipynb ← Este notebook │ 
+├── data/ 
+    ├── raw/ 
+	    └── WA_Fn-UseC_-Telco-Customer-Churn.csv
+    └── processed/
+	    │ └── churn_data_clean_v1.csv ← Entrada deste notebook 
+├── notebooks/ 
+	├── 01_qualidade_dados.ipynb 
+	├── 02_analise_exploratoria.ipynb ← Este notebook 
 	└── 03_engenharia_feature.ipynb 
-├── reports/ │ 
+├── reports/ 
 	└── relatorio_executivo.md ← Saída deste notebook 
-├── docs/ │ 
+├── docs/ 
 	└── insights_churn.txt ← Saída deste notebook 
 └── README.md
 ```
@@ -216,7 +216,7 @@ telco-churn-prediction/
 | ---------- | ---------- | ----------------------------------------------------------------------------------------- |
 | **v1.0.0** | 08/02/2026 | Implementação completa da EDA, geração de artefatos e integração ao pipeline.             |
 | **v1.1.0** | 11/02/2026 | Ajustes de layout das visualizações, inclusão de cohort analysis e matriz de priorização. |
-| **v2.0.0** | 24/02/2026 | Revisão textual e ajustes necessários na escrita para melhor entendimento.                        |
+| **v2.0.0** | 25/02/2026 | Atualização e revisão final (código e documentação).              |
 
 ---
 ## 👤 Autor
@@ -241,7 +241,7 @@ telco-churn-prediction/
 ---
 ### 🔗 Navegação Rápida  
 
-**⬅️ [Anterior](README_01_qualidade_dados.md)** | **[🔝 Voltar ao topo](#-visão-geral)** | **➡️ [Próximo](README_03_engenharia_feature.md)**  
+**⬅️ [Anterior](/projects/01-telco-customer-churn-prediction/notebooks/README_01_qualidade_dados.md)** | **[🔝 Voltar ao topo](#-visão-geral)** | **➡️ [Próximo](/projects/01-telco-customer-churn-prediction/notebooks/README_03_engenharia_feature.md)**  
 
 ---  
 ## 📂 Principais Trechos de Código (para referência)
@@ -292,7 +292,7 @@ print(f"\nDimensões: {df.shape[0]:,} linhas × {df.shape[1]} colunas")
 display(df.head())
 ```
 
-**Saída esperada**
+**[Output]**:
 
 ```output
 ================================================================================
@@ -301,8 +301,6 @@ DATASET CARREGADO
 
 Dimensões: 7,043 linhas × 21 colunas
 ```
-
-![Tabela de `df.head()`](../src/notebooks/02_estatistica-numerica.png)
 
 ---
 
@@ -355,11 +353,10 @@ Data columns (total 21 columns):
 dtypes: float64(2), int64(2), object(17)
 ```
 
-**Visualizações**:
+**📊 Tabelas Descritivas Númericas e Categoricas**:
 
-![Tabela Descritivas Númericas](../src/notebooks/02_estatistica-numerica.png)
-
-![Tabela Descritivas Categoricas](../src/notebooks/02_estatistica-categorica.png)
+<img src="../src/notebooks/02_estatistica-numerica.png" width="500" height="300">
+<img src="../src/notebooks/02_estatistica-categorica.png" width="700" height="150">
 
 ---
 
@@ -388,9 +385,9 @@ fig.update_layout(title_text='Distribuição da Variável Target (Churn)')
 fig.show()
 ```
 
-**Visualização**:
+**Visualização (Distribuição de Churn)**:
 
-![Distribuição de Churn](../src/notebooks/02_distribuicao_churn.png)
+<img src="../src/notebooks/02_distribuicao_churn.png" width="600">
 
 ---
 
@@ -405,9 +402,9 @@ plt.ylabel('Frequência')
 plt.show()
 ```
 
-**Visualização**:
+**Visualização (Distribuição de Tenure)**:
 
-![Distribuição de Tenure](../src/notebooks/02-tenure-por-status.png)
+<img src="../src/notebooks/02-tenure-por-status.png" width="600">
 
 ---
 
@@ -423,9 +420,10 @@ plt.ylabel('Tenure (meses)')
 plt.show()
 ```
 
-**Visualização**:
+**Visualização (Tenure por Status de Churn)**:
 
-![Tenure por Status de Churn](../src/notebooks/02_MonthlyCharges-por-churn.png)
+<img src="../src/notebooks/02_MonthlyCharges-por-churn.png" width="600">
+
 
 ---
 
@@ -442,9 +440,9 @@ plt.title('Matriz de Correlação das Variáveis Numéricas')
 plt.show()
 ```
 
-**Visualização**:
+**Visualização (Matriz de Correlação das Variáveis Numéricas)**:
 
-![Matriz de Correlação](../src/notebooks/02_analise-correlacao.png)
+<img src="../src/notebooks/02_correlacao-com-churn.png" width="600">
 
 ---
 
@@ -474,9 +472,9 @@ def analise_cohort_tenure(df_input):
 df = analise_cohort_tenure(df)
 ```
 
-**Visualização**:
+**Visualização (Taxa de Churn por Cohort)**:
 
-![Taxa de Churn por Cohort](../src/notebooks/02_analise-cohort.png)
+<img src="../src/notebooks/02_analise-cohort.png" width="600">
 
 ### 9️⃣ Matriz de Priorização de Ações
 
@@ -506,9 +504,9 @@ def criar_matriz_priorizacao():
 criar_matriz_priorizacao()
 ```
 
-**Visualização**:
+**Visualização (Matriz de Priorização)**:
 
-![Matriz de Priorização](../src/notebooks/02_matriz-prioridades.png)
+<img src="../src/notebooks/02_matriz-prioridades.png" width="700">
 
 ### 🔟 Perfil de Cliente em Risco
 
@@ -527,9 +525,9 @@ print("Perfil de Cliente por Status de Churn:")
 display(churn_profile)
 ```
 
-**Visualização**:
+**Visualização (Perfil de Cliente por Status de Churn)**:
 
-![Perfil de Cliente por Status de Churn](../src/notebooks/02-comparacao-perfis.png)
+<img src="../src/notebooks/02-comparacao-perfis.png" width="700">
 
 
 ### 1️⃣1️⃣ Customer Lifetime Value (CLV)
@@ -552,9 +550,9 @@ plt.show()
 print(f"CLV Médio Estimado: $ {df['CLV_Estimado'].mean():.2f}")
 ```
 
-**Visualização**:
+**Visualização (Distribuição do CLV Estimado)**:
 
-![Distribuição do CLV Estimado](../src/notebooks/02_clv.png)
+<img src="../src/notebooks/02_clv.png" width="700">
 
 ### 1️⃣2️⃣ Exportação de Artefatos
 
@@ -605,7 +603,8 @@ print(f"Insights de churn exportados para: {insights_path}")
 **Output**:
 
 ```
-Dataset com CLV exportado para: ../data/processed/churn_data_eda_v2.csv Relatório executivo exportado para: ../reports/relatorio_executivo.md 
+Dataset com CLV exportado para: ../data/processed/churn_data_eda_v2.csv
+Relatório executivo exportado para: ../reports/relatorio_executivo.md 
 Métricas de análise exportadas para: ../reports/metricas_analise.json 
 Insights de churn exportados para: ../docs/insights_churn.txt
 ```
@@ -625,4 +624,39 @@ ANÁLISE EXPLORATÓRIA CONCLUÍDA!
 
 ```
  
+## 🔄 Notas de Versão
+
+| Versão | Data       | Descrição                                  |
+| ------ | ---------- | ------------------------------------------ |
+| **v1.0.0** | 08/02/2026 | Análise exploratória completa implementada |
+| **v1.1.0** | 10/02/2026 | Documentação Exportação                    |
+| **v2.0.0** | 25/02/2026 | Atualização e revisão final (código e documentação) 
+
 ---
+## 👤 Autor
+
+**Nome:** Ivan Ajala  
+**Função:** Data Scientist  
+**Projeto:** Telco Customer Churn Prediction  
+
+[![GitHub](https://img.shields.io/badge/GitHub-Ivan%20Ajala-181717?logo=github)](https://github.com/IvanAjala)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ivan%20Ajala-0A66C2?logo=linkedin)](https://www.linkedin.com/in/ivan-ajala)  
+[![Email](https://img.shields.io/badge/Email-ivan.ajala%40gmail.com-red)](mailto:ivan.ajala@gmail.com)
+
+
+**⭐ Se este projeto foi útil, considere dar uma estrela no GitHub!**
+
+  [![Estrelas](https://img.shields.io/github/stars/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/stargazers)
+  [![Forks](https://img.shields.io/github/forks/IvanAjala/ivan-ajala-ds-portfolio?style=social)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/network/members)
+  [![Licença](https://img.shields.io/badge/Licença-MIT-green)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio/blob/main/projects/01-telco-customer-churn-prediction/LICENSE)
+  [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+  [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+
+---
+
+### 🔗 Navegação Rápida
+
+**⬅️ [Anterior](./README_01_qualidade_dados.md)** | **[🔝 Voltar ao topo](#-visão-geral)** | **➡️ [Próximo](./README_03_engenharia_feature.md)**
+
+---
+
