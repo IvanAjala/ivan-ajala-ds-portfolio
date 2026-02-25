@@ -3,7 +3,7 @@
     "model_type": "CalibratedClassifierCV",
     "base_estimator": "RandomForestClassifier",
     "calibration_method": "isotonic",
-    "timestamp": "2026-02-04 23:28:28",
+    "timestamp": "2026-02-12 15:01:57",
     "test_metrics": {
         "roc_auc": 0.8431,
         "recall": 0.735,

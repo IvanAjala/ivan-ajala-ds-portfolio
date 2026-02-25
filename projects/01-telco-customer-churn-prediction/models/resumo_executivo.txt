@@ -1,0 +1,18 @@
+============================================================
+RESUMO EXECUTIVO - PROJETO DE CHURN
+============================================================
+
+Data da análise: 18/02/2026 19:12
+Modelo selecionado: Logistic Regression Calibrated (CV)
+
+Métricas do modelo final:
+  ROC-AUC: 0.8404
+  Accuracy: 0.7637
+  Precision: 0.5412
+  Recall: 0.7193
+  F1-Score: 0.6177
+  Brier Score: 0.1563
+
+============================================================
+PROJETO CONCLUÍDO COM SUCESSO!
+============================================================

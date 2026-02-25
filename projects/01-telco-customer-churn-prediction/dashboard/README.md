@@ -1,410 +1,275 @@
-# 🎯 Dashboard Streamlit - Churn Prediction
+# Sistema Inteligente de Retenção de Clientes - Dashboard Executivo
 
-## 📋 **Visão Geral**
+![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-1.30.0-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-5.18.0-3F4F75?style=for-the-badge&logo=plotly&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-2.0+-150458?style=for-the-badge&logo=pandas&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3+-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Status](https://img.shields.io/badge/Status-%E2%9C%85%20Conclu%C3%ADdo-success?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-Dashboard executivo interativo para análise preditiva de churn, segmentação de clientes e tomada de decisão baseada em dados.
+---
+## 🔍 Visão Geral 
+
+O **Sistema Inteligente de Retenção de Clientes** é um dashboard executivo desenvolvido em Streamlit que permite a visualização interativa de métricas de churn, segmentação de risco, recomendações de ação e análise financeira para uma operadora de telecomunicações. Baseado em modelos de machine learning, o sistema identifica clientes com risco de cancelamento e fornece recomendações estratégicas para maximizar a retenção e o ROI.
+
+---
+## 🖼️ Tour pelo Dashboard
+
+Vamos fazer um tour pelas principais telas do dashboard para que você possa entender suas funcionalidades sem precisar executá-lo.
+
+---
+### 📊 Página Inicial - Visão Geral
+
+<img src="../src/dashboard/06_img_dashboard-visao-geral.png" width="900">
+
+A página inicial apresenta os seguintes KPIs do negócio em um formato claro e conciso.
+
+* **KPIs Principais do modelo**:
+
+	- ROC-AUC - 0.8404
+	- Recall - 71.93%
+	- Precision - 54.12%
+	- F1-Score - 0.6177
+
+- **Métricas de Risco**:
+
+	- 497 Clientes em Risco Crítico (35.3% da base)
+	- $ 417,480 de Receita em Risco
+	- 497 clientes Prioridade Máxima (ação imediata)
+
+- **Resumo Financeiro**:
+
+	- $ 840 Receita Média/Cliente
+	- $ 50 Custo por Intervenção
+	- 584% de ROI Projetado
+	- 1.8 meses de Payback
+
+---
+### 📈 Página Performance
+
+<img src="../src/dashboard/06_img_dashboard-performance.png" width="900">
+
+<img src="../src/dashboard/06_img_dashboard-analise-avancada.png" width="900">
+
+A página Performance apresenta filtros e visualizações do modelo, possibilitando simular diversos cenários.
+
+- **Performance do Modelo**:
+	- Filtros por segmento de risco
+
+- **Configuração de Threshold**:
+	- Threshold 0.3 (Agressivo)
+	- Threshold 0.5 (Padrão)
+	- Threshold 0.7 (Conservador)
+
+- **Visualizações dinâmicas**:
+	- Matriz de Confusão
+	- Métricas de Classificação
+	- Curva ROC
+	- Curva de Calibração
 
 ---
 
-## ✨ **Funcionalidades Principais**
+### 🔍 Página  Fatores de Churn
 
-### 🏠 **📊 Visão Geral**
+<img src="../src/dashboard/06_img_dashboard-fatores-de-churn.png" width="900">
 
-_KPIs em tempo real e métricas consolidadas_
+Na Página Fatores de Churn, encontra-se as principais informações sobre as Features, assim como Benchmark, Insights e Recomendações.
 
-- Dashboard executivo com métricas-chave
-- Distribuição de clientes por nível de risco
-- Evolução temporal das taxas de churn
-- Indicadores financeiros consolidados
+- **Fatores de Churn**:
+	- Aumentam Churn (TOP 5)
+	- Reduzem Churn (TOP 5)
 
-### 🎯 **🎯 Segmentação de Clientes**
+- **Interpretação dos Odds Ratio**:
+	- Odds Ratio > 1
+	- Odds Ratio < 1
 
-_Análise detalhada por perfil de risco_
+- **Comparação com Benchmark**:
+	- Top Fatores de Risco
+	- Benchmark Indústria
 
-- Distribuição por segmentos (Crítico, Alto, Médio, Baixo)
-- Scatter plots interativos com múltiplas dimensões
-- Comparações entre segmentos
-- Análise demográfica por grupo
+- **Impacto das Features**
+	- Top 15 Fatores de Churn (Coeficientes)
 
-### 💡 **💡 Recomendações Personalizadas**
+- **Insights Estratégicos**:
+	- Fator de Maior Risco
+	- Fator de Maior Proteção
 
-_Sistema inteligente de ações de retenção_
+- **Recomendações por Categoria**:
+	- Contrato
+	- Serviços
+	- Financeiro
 
-- Playbook de ações específicas por segmento
-- Distribuição de recomendações otimizadas
-- Listas de clientes por tipo de ação
-- Estimativa de efetividade por intervenção
-
-### 💰 **💰 Análise Financeira**
-
-_ROI e impacto econômico das ações_
-
-- Gráfico de cascata (waterfall) de receita
-- ROI estimado por segmento
-- Análise de custo-benefício
-- Simulação de cenários financeiros
-
-### 👥 **👥 Clientes Prioritários**
-
-_Gestão de campanhas de retenção_
-
-- Tabela interativa com filtros avançados
-- Download de listas em múltiplos formatos
-- Resumo de métricas por prioridade
-- Atribuição de agentes/equipes
 ---
+### 📈 Página Segmentação de Clientes
 
-## 🚀 **Como Executar**
+<img src="../src/dashboard/06_img_dashboard-segmentacao.png" width="900">
 
-### **1. 📦 Instalação Local**
+A página Segmentação de Clientes, possui visualizações que permitem identificar rapidamente quais segmentos devem ser priorizados nas ações de retenção.
+
+- **Segmentação de Clientes**:
+	- Alto Risco
+	- Médio Risco
+	- Baixo Risco
+	- Total em Risco
+
+- **Resumo dos Segmentos Prioritários**:
+	- Clientes em Risco
+	- Receita em Risco
+	- Clientes Estáveis
+	- Clientes Leais
+
+- **Estratégias por Segmento**:
+	- Ações
+
+- **Matriz de Priorização**
+	- Neutros com Alto Valor
+	- Críticos com Alto Valor
+	- Neutros com Valor Médio
+	- Demais Segmentos
+
+- **Visualizações Gráficas**:
+	- Distribuição por segmento
+	- Taxa de Churn por segmento
+	- Distribuição de Receita por Segmento
+
+---
+### 💰 Página Impacto Financeiro
+
+<img src="../src/dashboard/06_img_dashboard-impacto-financeiro.png" width="900">
+
+A página de recomendações apresenta a análise baseada em todos os segmentos, a distribuição do Impacto e a análise de cenários.
+
+- **Análise baseada em todos os segmentos**:
+	- 1,409 clientes analisados | 497 em risco crítico
+	- Projeção para base total de 5,000,000 clientes
+
+- **Estratégia de Retenção**
+
+- **Distribuição do Impacto**:
+	- Distribuição do Lucro por Segmento
+	- ROI por Segmento
+
+- **Análise de Cenários**:
+	- Pessimista
+	- Base
+	- Otimista
+
+---
+### 🔮 Página do Simulador
+
+<img src="../src/dashboard/06_img_dashboard-simulador.png" width="900">
+
+O simulador permite testar diferentes cenários e entender como as características do cliente afetam a probabilidade de churn:
+
+- **Seleção de Características**: 
+	- Tipo de internet, contrato, tempo como cliente, serviços de proteção, etc.
+
+- **Classificação de Risco**: 
+	- Mostra o segmento em que o cliente se enquadra
+
+- **Recomendações**: 
+	- Principais ações recomendadas
+
+- **Simulação de Mudanças**: 
+	- Permite testar o impacto de diferentes intervenções
+
+Esta ferramenta é valiosa para entender os drivers de churn e testar estratégias de mitigação.
+
+---
+## ✨ Funcionalidades
+
+- **KPIs em Tempo Real**: Visualização das métricas-chave de negócio
+- **Segmentação de Risco**: Classificação dos clientes em 5 níveis de risco
+- **Playbook de Retenção**: Recomendações específicas para cada segmento
+- **Análise Financeira**: Projeções de impacto financeiro das ações
+- **Simulador de Churn**: Ferramenta interativa para testar cenários
+
+---
+## 🛠 Tecnologias
+
+|Tecnologia|Uso|
+|---|---|
+|**Python 3.9+**|Linguagem de programação base|
+|**Streamlit**|Framework para desenvolvimento da interface web interativa|
+|**Pandas & NumPy**|Manipulação e análise de dados|
+|**Plotly**|Visualizações interativas e responsivas|
+|**Scikit-learn**|Modelos de machine learning para predição de churn|
+|**JSON**|Armazenamento de configurações e playbook de retenção|
+|**CSS Customizado**|Estilização avançada da interface|
+
+## 🚀 Instalação e Execução
+
+1. **Clone o repositório**
 
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/telco-customer-churn-prediction.git
-
-# Navegue para a pasta do dashboard
-cd telco-customer-churn-prediction/dashboard
-
-# Instale as dependências
-pip install -r requirements.txt
+   git clone https://github.com/username/telco-churn-dashboard.git
+   cd telco-churn-dashboard
 ```
 
-### **2. ▶️ Execução**
+2. **Instale as dependências**
 
 ```bash
-# Execute o dashboard
-streamlit run app.py
+   pip install -r requirements.txt
 ```
 
-### **3. 🌐 Acesso**
-
-O dashboard será aberto automaticamente no seu navegador padrão:
-
-- **URL Local**: `http://localhost:8501`
-- **Porta alternativa**: `streamlit run app.py --server.port 8502`
-
----
-## 📁 **Estrutura do Projeto**
-
-```text
-dashboard/
-├── 📄 app.py                      # Aplicação principal
-├── 📁 pages/                      # Páginas multi-page
-│   ├── 📄 1_Visao_Geral.py        # Página: Visão Geral
-│   ├── 📄 2_Segmentacao.py        # Página: Segmentação
-│   ├── 📄 3_Recomendacoes.py      # Página: Recomendações
-│   ├── 📄 4_Analise_Financeira.py    # Página: Análise Financeira
-│   └── 📄 5_Clientes_Prioritarios.py # Página: Clientes Prioritários
-├── 📁 utils/                         # Funções auxiliares
-│   ├── 📄 __init__.py
-│   └── 📄 helpers.py        # Funções de carregamento e processamento
-├── 📁 assets/               # Recursos estáticos
-│   ├── 🖼️ logo.png          # Logo da aplicação
-│   └── 🎨 style.css         # Estilos customizados
-├── 📄 requirements.txt      # Dependências específicas do dashboard
-└── 📄 README.md             # Esta documentação
-```
-
-## 🎛️ **Filtros e Controles**
-
-### **🔍 Filtros Disponíveis**
-
-|Filtro|Tipo|Descrição|
-|---|---|---|
-|**Nível de Risco**|Multi-select|Crítico, Alto, Médio, Baixo|
-|**Probabilidade de Churn**|Range Slider|0% a 100%|
-|**Customer Lifetime Value (CLV)**|Range Input|Faixa de valor|
-|**Tenure (Meses)**|Range Slider|Tempo como cliente|
-|**Método de Pagamento**|Dropdown|Tipos de pagamento|
-|**Tipo de Contrato**|Checkbox|Mensal, Anual, Bienal|
-|**Serviços Adicionais**|Multi-select|Internet, TV, Streaming, etc.|
-
-### **📊 Visualizações Interativas**
-
-|Gráfico|Tipo|Interatividade|
-|---|---|---|
-|Distribuição de Risco|Donut Chart|Clique para filtrar|
-|Scatter Plot|2D/3D|Zoom e pan|
-|Waterfall Chart|Barra|Hover para detalhes|
-|Heatmap|Matriz|Clique para detalhar|
-|Tabela Clientes|DataFrame|Ordenação e filtro|
-
----
-
-## 📥 **Downloads e Exportações**
-
-### **📁 Formatos Suportados**
-
-- **CSV**: Para análise em Excel/BI
-- **Excel (.xlsx)**: Com formatação
-- **JSON**: Para integrações
-- **PDF**: Relatórios executivos
-- **PNG**: Gráficos em alta resolução
-
-### **📋 Conteúdos Exportáveis**
-
-1. **Dataset Completo** com todas as métricas
-2. **Listas de Clientes Prioritários** (Top 20, 50, 100, 500)
-3. **Resumos por Segmento** com métricas consolidadas
-4. **Recomendações por Cliente** com ações específica
-
----
-
-## ☁️ **Deploy em Produção**
-
-### **Opção 1: Streamlit Cloud (Recomendado)**
+3. **Execute o notebook para gerar os artefatos necessários**
 
 ```bash
-# 1. Faça push para o GitHub
-git add .
-git commit -m "Deploy dashboard"
-git push origin main
-
-# 2. Acesse https://share.streamlit.io
-# 3. Conecte seu repositório
-# 4. Configure o caminho: dashboard/app.py
-# 5. Clique em Deploy
+   jupyter notebook notebooks/05_business_insights.ipynb
 ```
 
-### **Opção 2: Heroku**
+4. **Inicie o dashboard**
 
 ```bash
-# Crie um Procfile na raiz do projeto
-echo "web: streamlit run dashboard/app.py --server.port $PORT --server.enableCORS false" > Procfile
-
-# Crie requirements.txt consolidado
-cat requirements.txt dashboard/requirements.txt | sort -u > requirements_prod.txt
-
-# Deploy
-heroku create telco-churn-dashboard
-git push heroku main
+   cd dashboard
+   streamlit run app.py
 ```
 
-### **Opção 3: Docker**
+5. **Acesse o dashboard**
 
-```dockerfile
-# Dockerfile
-FROM python:3.9-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
-EXPOSE 8501
-CMD ["streamlit", "run", "dashboard/app.py"]
-```
+	O aplicativo será aberto automaticamente no seu navegador padrão (geralmente em `http://localhost:8501`)
 
-```bash
-# Build e execução
-docker build -t churn-dashboard .
-docker run -p 8501:8501 churn-dashboard
-```
+---
+## 👥 Contribuições
+
+Contribuições são bem-vindas! 
+
+Para contribuir:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+## 👤 **Autor**
+
+**Nome:** Ivan Ajala  
+**Função:** Data Scientist  
+**Projeto:** Telco Customer Churn Prediction
+
+![GitHub](https://img.shields.io/badge/GitHub-IvanAjala-181717?logo=github)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-ivan_ajala-0A66C2?logo=linkedin)
+![Email](https://img.shields.io/badge/Email-ivan_ajala@hotmail.com-red)
+
+---
+## 📄 Licença
+
+Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](../LICENSE) para detalhes.
+
+---
+## 🔄 Histórico de Versões
+
+| Versão | Data       | Descrição                                                |
+| ------ | ---------- | -------------------------------------------------------- |
+| 1.0    | 25/02/2026 | Atualização e revisão final (código e documentação)      |
 
 ---
 
-## 🔧 **Configuração Avançada**
+![Estrelas](https://img.shields.io/github/stars/seu-usuario/telco-churn-prediction?style=social)
+![Forks](https://img.shields.io/github/forks/seu-usuario/telco-churn-prediction?style=social)
+![Licença](https://img.shields.io/badge/Licença-MIT-green)
 
-### **🔄 Variáveis de Ambiente**
-
-```bash
-# Crie um arquivo .env na pasta dashboard/
-STREAMLIT_SERVER_PORT=8501
-STREAMLIT_THEME_BASE="light"
-STREAMLIT_SERVER_MAX_UPLOAD_SIZE=200
-DATA_PATH="../data/processed/"
-MODEL_PATH="../models/"
-```
-
-### **🎨 Customização de Tema**
-
-```python
-# Em app.py, antes de streamlit.run()
-import streamlit as st
-
-st.set_page_config(
-    page_title="Dashboard Churn Prediction",
-    page_icon="📊",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
-# Carregar CSS customizado
-with open('assets/style.css') as f:
-    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-```
----
-## 🐛 **Solução de Problemas**
-
-### **Problema 1: Erro ao carregar dados**
-
-**Sintoma**: `FileNotFoundError` ou dados não aparecem  
-**Solução**:
-
-```bash
-# Execute o pipeline completo primeiro
-cd ..
-python scripts/run_pipeline.py --all
-
-# Ou execute apenas o notebook de business insights
-jupyter notebook notebooks/05_business_insights.ipynb
-```
-
-### **Problema 2: Dependências faltando**
-
-**Sintoma**: `ModuleNotFoundError`  
-**Solução**:
-
-```bash
-# Reinstale todas as dependências
-pip uninstall -r requirements.txt -y
-pip install -r requirements.txt --upgrade
-
-# Para o dashboard especificamente
-cd dashboard
-pip install -r requirements.txt --force-reinstall
-```
-### **Problema 3: Performance lenta**
-
-**Solução**:
-
-```python
-# Ative o cache do Streamlit
-@st.cache_data
-def load_data():
-    return pd.read_csv('data/processed/customers_with_recommendations.csv')
-
-# Use sampling para datasets muito grandes
-if len(data) > 10000:
-    sample_data = data.sample(10000, random_state=42)
-```
-### **Problema 4: Porta em uso**
-
-**Solução**:
-
-```bash
-# Mude a porta
-streamlit run app.py --server.port 8502
-
-# Ou mate processos na porta 8501
-lsof -ti:8501 | xargs kill -9
-```
-
-## 🔐 **Segurança e Autenticação**
-
-### **Autenticação Básica** (opcional)
-
-```python
-# Em app.py
-import streamlit_authenticator as stauth
-
-# Configurar autenticação
-authenticator = stauth.Authenticate(
-    credentials,
-    "churn_dashboard",
-    "abcdef",
-    cookie_expiry_days=30
-)
-
-name, authentication_status, username = authenticator.login("Login", "main")
-
-if authentication_status:
-    # Mostrar dashboard
-elif authentication_status == False:
-    st.error("Username/password is incorrect")
-elif authentication_status == None:
-    st.warning("Please enter your username and password")
-```
+**⭐ Se este projeto foi útil, considere dar uma estrela no GitHub!**
 
 ---
-## 📈 **Monitoramento e Logs**
+### 🔗 Navegação Rápida
 
-### **Ativar Logs Detalhados**
-
-```bash
-# Execute com verbosidade aumentada
-streamlit run app.py --logger.level=debug
-
-# Ou direcione logs para arquivo
-streamlit run app.py 2>&1 | tee dashboard.log
-```
-
-### **Métricas de Uso**
-
-```python
-# Track de uso básico
-import datetime
-
-def track_usage(page_name, action):
-    timestamp = datetime.datetime.now()
-    log_entry = f"{timestamp},{page_name},{action}\n"
-    
-    with open('usage_log.csv', 'a') as f:
-        f.write(log_entry)
-```
-
-## 🔗 **Integrações**
-
-### **API do Modelo**
-
-```python
-# Exemplo de integração com API do modelo
-import requests
-
-def predict_churn_api(customer_data):
-    response = requests.post(
-        "http://localhost:8000/predict",
-        json=customer_data
-    )
-    return response.json()
-```
-
-### **Webhooks para Sistemas Externos**
-
-```python
-# Enviar alertas para Slack
-def send_slack_alert(high_risk_customers):
-    webhook_url = "https://hooks.slack.com/services/..."
-    message = {
-        "text": f"⚠️ {len(high_risk_customers)} clientes de alto risco identificados"
-    }
-    requests.post(webhook_url, json=message)
-```
+**⬅️ [Anterior](../notebooks/05_business_insights.ipynb)** | **[🔝 Voltar ao topo](#-visão-geral)**  | **➡️ [Próximo](../README.md)**
 
 ---
-## 📚 **Recursos Adicionais**
-
-### **Documentação**
-
-- [📖 Streamlit Documentation](https://docs.streamlit.io/)
-- [🎨 Streamlit Components](https://streamlit.io/components)
-- [🚀 Deployment Guide](https://../docs/deployment_guide.md)
-
-### **Exemplos e Templates**
-
-- [💼 Dashboard Templates](https://github.com/streamlit/example-apps)
-- [📊 Chart Examples](https://docs.streamlit.io/library/api-reference/charts)
-
-### **Suporte**
-
-- [💬 Streamlit Community](https://discuss.streamlit.io/)
-- [🐛 Report Issues](https://../.github/ISSUE_TEMPLATE/bug_report.md)
-
----
-
-## 🎯 **Próximos Passos Planejados**
-
-- Integração com CRM (Salesforce, HubSpot)
-- Notificações em tempo real
-- A/B testing de recomendações
-- Dashboard mobile-responsive
-- Internacionalização (multi-língua)
-- Análise de sentimentos em feedback
-
----
-
-> **💡 Dica**: Para desenvolvimento, use `streamlit run app.py --server.runOnSave true` para recarregamento automático.
-
----
-
-*Última atualização: 05/02/2026*  
-_Versão do Dashboard: 1.0.0_  
-_Desenvolvido com ❤️ usando Streamlit_

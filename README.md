@@ -1,3 +1,6 @@
+<img src="./scr/banners/01_img_banner.png" width="1000" height="200">
+
+
 # Portifólio Profissional em Ciência / Analise de Dados
 
 [![Portfólio Data Science](https://img.shields.io/badge/Portfólio-Data_Science-2E86C1)](https://github.com/IvanAjala/ivan-ajala-ds-portfolio)
@@ -9,17 +12,15 @@
 
 ## 👨‍💻 Sobre Mim
 
-**Cientista de Dados em transição estratégica** com mais de **20 anos de experiência em gestão de operações e estratégia empresarial**. Combino visão de negócios com habilidades técnicas avançadas para transformar dados em insights acionáveis e impacto mensurável.
+**Cientista de Dados em transição estratégica** com +**15 anos de experiência em gestão de operações e estratégia empresarial**. Combino visão de negócios com habilidades técnicas avançadas para transformar dados em insights acionáveis e impacto mensurável.
 
 **🎯 Objetivo Profissional:** Posições como **Cientista de Dados | Analista de Dados** onde possa aplicar minha dupla expertise (técnica + negócios) para resolver desafios complexos e gerar valor através de dados.
 
 **📈 Meu Diferencial:** Entendo tanto a linguagem dos dados quanto a dos negócios. Traduzo problemas corporativos em soluções técnicas e comunico insights complexos para decisores executivos.
 
----
-
 ## 🚀 Projetos em Destaque
 
-### [📊 01 - Sistema de Prevenção de Churn com ML Interpretável](projects/01-telco-customer-churn-prediction/README.md)
+### [📊 01 - Sistema de Prevenção de Churn com ML Interpretável](../ivan-ajala-ds-portfolio/projects/01-telco-customer-churn-prediction/README.md)
 
 * **Problema de Negócio:** Reduzir a evasão de clientes através da identificação proativa de riscos  
 * **Objetivo:** Desenvolver modelo preditivo com interpretabilidade para ações de retenção personalizadas  
@@ -135,17 +136,17 @@
 
 ```text
 ivan-ajala-ds-portfolio/
-├── projects/                    # Todos os projetos completos
-│   ├── 01-churn-prediction/    # Sistema completo de ML
-│   ├── 02-esg-analysis/        # Análise de dados públicos
-│   └── 03-recommendation-system/ # Sistema de recomendação
-├── docs/                       # Documentação detalhada
-├── notebooks/                  # Jupyter notebooks de análise
-├── src/                        # Código modularizado
-├── datasets/                   # Dados utilizados (quando permitido)
-├── assets/                     # Imagens e recursos visuais
-├── LICENSE                     # MIT License
-└── README.md                   # Este arquivo
+├── projects/                       # Todos os projetos
+│   ├── 01-churn-prediction/        # Sistema completo de ML
+│   ├── 02-esg-analysis/            # Análise de dados públicos
+│   └── 03-recommendation-system/   # Sistema de recomendação
+├── docs/                           # Documentação detalhada
+├── notebooks/                      # Jupyter notebooks de análise
+├── src/                            # Código modularizado
+├── datasets/                       # Dados utilizados (quando permitido)
+├── assets/                         # Imagens e recursos visuais
+├── LICENSE                         # MIT License
+└── README.md                       # Este arquivo
 ```
 
 **🎯 Filosofia dos Projetos:** Cada projeto simula um desafio real do mercado, incluindo:
@@ -179,10 +180,7 @@ Este portfólio está licenciado sob a licença MIT - veja o arquivo [LICENSE](L
 
 ## 🌟 Por Que Contratar um Profissional em Transição?
 
-**"Profissionais que fazem transição de carreira trazem uma perspectiva única:  
-eles entendem os dados E entendem o negócio. Essa combinação é rara e valiosa."**
-
-Minha jornada de **14 anos em gestão** me proporcionou:
+Minha jornada com +**15 anos em gestão** me proporcionou:
 - Visão holística dos processos empresariais
 - Habilidade de comunicar insights para todos os níveis
 - Entendimento prático de métricas que realmente importam
@@ -199,5 +197,6 @@ e histórias são apenas palavras até que alguém as transforme em ação."*
 
 ---
 
-**Última atualização:** Janeiro de 2026
+**Última atualização:** Fevereiro de 2026
+
 **Repositório ativo:** Novos projetos sendo adicionados com recorrência.

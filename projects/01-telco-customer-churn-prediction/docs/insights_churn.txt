@@ -1,0 +1,27 @@
+INSIGHTS TÉCNICOS - ANÁLISE EXPLORATÓRIA
+===========================================
+DATA: 10/02/2026
+
+ESTATÍSTICAS BÁSICAS:
+• Total de registros: 7,043
+• Taxa de churn: 26.5%
+• Tenure médio (Churn): 18.0 meses
+• Tenure médio (Não-Churn): 37.6 meses
+
+DISTRIBUIÇÕES IMPORTANTES:
+1. CONTRATO:
+   - Mês-a-mês: 3,875 clientes
+   - Anual: 1,473 clientes
+   - Bienal: 1,695 clientes
+
+2. SERVIÇOS ADICIONAIS (Taxa de Churn):
+   • Sem OnlineSecurity: 41.8% de churn
+   • Sem OnlineBackup: 39.9% de churn
+   • Sem DeviceProtection: 39.1% de churn
+   • Sem TechSupport: 41.6% de churn
+
+PRÓXIMOS PASSOS RECOMENDADOS:
+1. Engenharia de Features: Criar variáveis derivadas
+2. Balanceamento: Lidar com desbalanceamento (26.5% churn)
+3. Encoding: Converter variáveis categóricas
+4. Modelagem: Testar algoritmos de classificação

@@ -28,6 +28,7 @@ SeniorAlone
 DemographicRiskScore
 CompositeRiskScore
 CompositeRiskScore_Normalized
+RiskLevel_Numeric
 TenureGroup_Encoded
 TenureQuartile_Encoded
 RiskLevel_Encoded
@@ -60,5 +61,5 @@ PaymentMethod_Mailed check
 Tenure_Segment_Intermediário (13-24 meses)
 Tenure_Segment_Novo (0-12 meses)
 Tenure_Segment_Veterano (48+ meses)
-Charges_Segment_Baixo (≤R$35)
-Charges_Segment_Médio (R$35-70)
+Charges_Segment_Baixo (≤$35)
+Charges_Segment_Médio ($35-70)

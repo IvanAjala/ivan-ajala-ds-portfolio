@@ -1,0 +1,62 @@
+{
+    "model_name": "Random Forest Otimizado",
+    "model_type": "RandomForestClassifier",
+    "timestamp": "2026-02-12 15:01:50",
+    "test_metrics": {
+        "roc_auc": 0.8443721098452556,
+        "accuracy": 0.7707594038325053,
+        "precision": 0.5497076023391813,
+        "recall": 0.7540106951871658,
+        "f1_score": 0.6358511837655016
+    },
+    "train_metrics": {
+        "roc_auc": 0.9251177921734767,
+        "accuracy": 0.8342208022719205,
+        "precision": 0.6386554621848739,
+        "recall": 0.8642140468227425,
+        "f1_score": 0.7345082433200683
+    },
+    "cross_validation": {
+        "cv_folds": 5,
+        "cv_roc_auc_mean": 0.8426815031699106,
+        "cv_roc_auc_std": 0.01337815095501093,
+        "cv_accuracy_mean": 0.7749325848186213,
+        "cv_precision_mean": 0.5588630158120493,
+        "cv_recall_mean": 0.7304347826086955,
+        "cv_f1_mean": 0.632994277511183
+    },
+    "best_params": {
+        "bootstrap": true,
+        "class_weight": "balanced",
+        "max_depth": 10,
+        "max_features": "log2",
+        "min_samples_leaf": 4,
+        "min_samples_split": 2,
+        "n_estimators": 300
+    },
+    "dataset_info": {
+        "total_features": 65,
+        "train_samples": 5634,
+        "test_samples": 1409,
+        "train_churn_rate": 0.2653532126375577,
+        "test_churn_rate": 0.2654364797728886
+    },
+    "error_analysis": {
+        "false_negatives": 92,
+        "false_positives": 231,
+        "true_positives": 282,
+        "true_negatives": 804,
+        "false_negative_rate": 0.06529453513129879,
+        "false_positive_rate": 0.16394606103619588
+    },
+    "calibration": {
+        "mean_calibration_error": 0.1265431837059113,
+        "max_calibration_error": 0.22268246430692645
+    },
+    "recommended_threshold": {
+        "optimal_f1": 0.4800000000000001,
+        "default": 0.5,
+        "conservative": 0.6,
+        "aggressive": 0.4
+    }
+}

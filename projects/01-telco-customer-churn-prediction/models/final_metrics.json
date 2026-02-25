@@ -1,0 +1,13 @@
+{
+  "ROC-AUC": 0.840357539590276,
+  "Accuracy": 0.7636621717530163,
+  "Precision": 0.5412474849094567,
+  "Recall": 0.7192513368983957,
+  "F1-Score": 0.6176808266360505,
+  "Brier Score": 0.1563071003093641,
+  "modelo_selecionado": "Logistic Regression Calibrated (CV)",
+  "timestamp": "2026-02-18 19:12:23.961831",
+  "total_features": 50,
+  "n_samples_train": 7450,
+  "n_samples_test": 1409
+}

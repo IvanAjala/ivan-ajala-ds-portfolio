@@ -1,0 +1,34 @@
+{
+  "estatisticas": {
+    "total_clientes": 7043,
+    "taxa_churn": 0.2653698707936959,
+    "tenure_medio": 32.37114865824223,
+    "custo_mensal_medio": 64.76169246059918
+  },
+  "variaveis": [
+    "customerID",
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges",
+    "Churn",
+    "Tenure_Segment",
+    "Charges_Segment"
+  ],
+  "timestamp": "2026-02-10T16:16:23.009389"
+}
